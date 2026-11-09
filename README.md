@@ -2,9 +2,10 @@
 
 A social networking site built with Node.js, Express, and MongoDB. Users sign up, upload pictures with a title and caption, browse a feed of everyone's posts, and like and comment on other users' posts.
 
-![Binary Upload Boom demo](./public/imgs/demo.png)
+![Binary Upload Boom demo](./public/imgs/binaryBoom.png)
 
 ## Try it Here
+
 [Live Link](https://binary-upload-boom-yhyx.onrender.com)
 
 ## Features
