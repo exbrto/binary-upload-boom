@@ -2,18 +2,27 @@
   "name": "binary-upload-boom",
   "version": "1.0.0",
   "description": "100Devs Social Network",
+  "homepage": "https://github.com/exbrto/binary-upload-boom#readme",
+  "bugs": {
+    "url": "https://github.com/exbrto/binary-upload-boom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exbrto/binary-upload-boom.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cloudinary": "^1.25.1",
     "connect-mongo": "^3.2.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-flash": "^0.0.2",
@@ -27,5 +36,6 @@
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "validator": "^13.6.0"
-  }
+  },
+  "devDependencies": {}
 }

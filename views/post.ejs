@@ -27,6 +27,30 @@
     <div class="col-3 mt-5">
       <p><%= post.caption %></p>
     </div>
+    <div class="mt-5">
+      <form action="/post/createComment" method="POST">
+        <input type="hidden" name="postId" value="<%= post._id %>">
+        <div class="mb-3">
+          <label for="comment" class="form-label">Comment</label>
+          <input type="text" class="form-control" id="comment" name="comment">
+        </div>
+        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+      </form>
+    </div>
+    <div class="mt-5">
+      <h3>Comments</h3>
+      <% if (comments.length> 0) { %>
+      <% comments.forEach(comment => { %>
+      <div class="mb-3">
+        <p>
+          <%= comment.comment %>
+        </p>
+      </div>
+      <% }) %>
+    <% } else { %>
+        <p>Be the first to comment</p>
+        <% } %>
+    </div>
     <div class="col-6 mt-5">
       <a class="btn btn-primary" href="/profile">Return to Profile</a>
       <a class="btn btn-primary" href="/feed">Return to Feed</a>
